@@ -1,0 +1,44 @@
+Bundle 'gmarik/vundle'
+
+" useful libraries
+Bundle 'tomtom/tlib_vim'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/mru.vim'
+Bundle 'corntrace/bufexplorer'
+Bundle 'vim-scripts/YankRing.vim'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'vim-scripts/undotree.vim'
+Bundle 'vim-scripts/a.vim'
+
+Bundle 'tpope/vim-surround'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'Raimondi/delimitMate'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'mhinz/vim-startify'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'majutsushi/tagbar'
+Bundle 'godlygeek/tabular'
+
+" latex
+Bundle 'jcf/vim-latex'
+
+" markdown
+Bundle 'tpope/vim-markdown'
+
+" git
+Bundle 'tpope/vim-fugitive'
+
+" autocomplete
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'honza/vim-snippets'
+
+" python
+Bundle 'klen/python-mode'
+
+" Ruby on rails
+Bundle 'tpope/vim-rails'
