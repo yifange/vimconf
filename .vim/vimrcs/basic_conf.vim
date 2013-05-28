@@ -61,8 +61,7 @@ set guioptions-=M
 map <leader>e :e! ~/.vim/tweaks.vim<CR>
 
 try
-    set undodir=~/.vim/temp_dirs/undodir
-    set undofile
+    set undodir=~/.vim/temp_dirs/undodir set undofile
 catch
 endtry
 
@@ -240,3 +239,12 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
+
+
+" auto save session while exiting
+function! SaveSess()
+    execute 'mksession! ~/.vim/temp_dirs/session/RESTORE_LAST'
+endfunction
+
+autocmd VimLeave * call SaveSess()
