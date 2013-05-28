@@ -243,8 +243,8 @@ endfunction
 
 
 " auto save session while exiting
-function! SaveSess()
-    execute 'mksession! ~/.vim/temp_dirs/session/RESTORE_LAST'
-endfunction
-
-autocmd VimLeave * call SaveSess()
+" function! SaveSess()
+"     execute 'mksession! ~/.vim/temp_dirs/session/RESTORE_LAST'
+" endfunction
+" 
+" autocmd VimLeave * call SaveSess()
