@@ -13,13 +13,13 @@ let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 if has("gui_running")
   let g:ctrlp_map = '<m-p>'
 else
-  let g:ctrlp_map = '<leader>.p'
+  let g:ctrlp_map = '<leader>mp'
 endif
 let g:ctrlp_match_window_bottom=0
 map <m-b> :CtrlPBuffer<CR>
-map <leader>.b :CtrlPBuffer<CR>
+map <leader>mb :CtrlPBuffer<CR>
 map <m-r> :CtrlPBufTag<CR>
-map <leader>.r :CtrlPBufTag<CR>
+map <leader>mr :CtrlPBufTag<CR>
 
 " MRU
 let MRU_Max_Entries = 400
@@ -43,10 +43,9 @@ let g:bufExplorerSplitBelow = 1
 let g:multi_cursor_next_key='<c-s>'
 
 " vim-latex
-nmap <m-l> <plug>IMAP_JumpForward
-imap <m-l> <plug>IMAP_JumpForward
-nmap <leader>.l <plug>IMAP_JumpForward
-imap <leader>.l <plug>IMAP_JumpForward
+nmap <c-\> <plug>IMAP_JumpForward
+imap <c-\> <plug>IMAP_JumpForward
+
 " startify
 let g:startify_session_dir = '~/.vim/temp_dirs/session'
 let g:startify_show_sessions = 1
