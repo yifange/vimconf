@@ -1,3 +1,4 @@
+rm -r ~/.vim
 mkdir -p ~/.vim/temp_dirs
 cp .vimrc ~
 cp .vim/bundles ~/.vim/

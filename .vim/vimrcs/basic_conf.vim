@@ -32,6 +32,11 @@ set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
 
+" Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
+
 " Searching
 set ignorecase
 set smartcase
@@ -90,8 +95,8 @@ set expandtab
 
 set smarttab
 
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 set linebreak
 set tw=500
@@ -153,6 +158,11 @@ nmap <M-j> mz:m+<cr>`z
 nmap <M-k> mz:m-2<cr>`z
 vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+nmap <leader>.j mz:m+<cr>`z
+nmap <leader>.k mz:m-2<cr>`z
+vmap <leader>.j :m'>+<cr>`<my`>mzgv`yo`z
+vmap <leader>.k :m'<-2<cr>`>my`<mzgv`yo`z
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
