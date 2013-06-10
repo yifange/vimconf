@@ -159,10 +159,10 @@ nmap <M-k> mz:m-2<cr>`z
 vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
-nmap <leader>.j mz:m+<cr>`z
-nmap <leader>.k mz:m-2<cr>`z
-vmap <leader>.j :m'>+<cr>`<my`>mzgv`yo`z
-vmap <leader>.k :m'<-2<cr>`>my`<mzgv`yo`z
+nmap <leader>mj mz:m+<cr>`z
+nmap <leader>mk mz:m-2<cr>`z
+vmap <leader>mj :m'>+<cr>`<my`>mzgv`yo`z
+vmap <leader>mk :m'<-2<cr>`>my`<mzgv`yo`z
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()

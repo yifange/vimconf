@@ -17,9 +17,9 @@ else
 endif
 let g:ctrlp_match_window_bottom=0
 map <m-b> :CtrlPBuffer<CR>
-map <leader>mb :CtrlPBuffer<CR>
+map <c-p><c-b> :CtrlPBuffer<CR>
 map <m-r> :CtrlPBufTag<CR>
-map <leader>mr :CtrlPBufTag<CR>
+map <c-p><c-r> :CtrlPBufTag<CR>
 
 " MRU
 let MRU_Max_Entries = 400
