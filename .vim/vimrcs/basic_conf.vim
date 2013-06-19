@@ -6,8 +6,11 @@ filetype plugin on
 filetype indent on
 syntax enable
 
-let mapleader = ","
-let g:mapleader = ","
+set pastetoggle=<F11>
+
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+let g:mapleader = " "
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
@@ -22,6 +25,8 @@ set wildignore=*.o,*~,*.pyc
 
 set wildignore+=.git\*,.hg\*,.svn\*
 
+set mouse=a
+
 set ruler
 
 set cmdheight=1
@@ -31,7 +36,7 @@ set hidden
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
-
+set ttimeoutlen=0
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
 set nowb
@@ -42,7 +47,7 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
-map <leader><CR> :noh<CR>
+map <silent> <leader><CR> :noh<CR>
 
 set lazyredraw
 
@@ -151,7 +156,7 @@ set viminfo^=%
 set laststatus=2
 
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
 
 nmap <M-j> mz:m+<cr>`z
@@ -159,10 +164,10 @@ nmap <M-k> mz:m-2<cr>`z
 vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
-nmap <leader>mj mz:m+<cr>`z
-nmap <leader>mk mz:m-2<cr>`z
-vmap <leader>mj :m'>+<cr>`<my`>mzgv`yo`z
-vmap <leader>mk :m'<-2<cr>`>my`<mzgv`yo`z
+nmap <leader>j mz:m+<cr>`z
+nmap <leader>k mz:m-2<cr>`z
+vmap <leader>j :m'>+<cr>`<my`>mzgv`yo`z
+vmap <leader>k :m'<-2<cr>`>my`<mzgv`yo`z
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()

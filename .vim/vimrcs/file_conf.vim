@@ -1,1 +1,2 @@
-autocmd BufNewFile, BufRead *.html.erb set filetype=html.eruby
+autocmd BufNewFile,BufRead *.html.erb NeoSnippetSource ~/.vim/bundle/vim-snippets/snippets/html.snippets
+

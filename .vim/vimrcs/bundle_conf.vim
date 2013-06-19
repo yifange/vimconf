@@ -3,9 +3,11 @@ nnoremap <silent> <leader>nn :NERDTreeToggle<CR>
 nnoremap <silent> <leader>nb :NERDTreeFromBookmark<CR>
 nnoremap <silent> <leader>nf :NERDTreeFind<cr>
 let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
-
+let NERDTreeMinimalUI=1
+let NERDTreeAutoDeleteBuffer=1
 " a.vim
-nnoremap <silent> <leader>a :A<CR>
+" nnoremap <silent> <leader>a :A<CR>
+
 " CtrlP
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
@@ -15,12 +17,12 @@ if has("gui_running")
 else
   let g:ctrlp_map = '<leader>mp'
 endif
+let g:ctrlp_map ="<c-p><c-p>"
 let g:ctrlp_match_window_bottom=0
 map <m-b> :CtrlPBuffer<CR>
 map <c-p><c-b> :CtrlPBuffer<CR>
 map <m-r> :CtrlPBufTag<CR>
 map <c-p><c-r> :CtrlPBufTag<CR>
-
 " MRU
 let MRU_Max_Entries = 400
 map <leader>f :MRU<CR>

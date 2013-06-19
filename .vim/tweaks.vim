@@ -14,4 +14,3 @@ vnoremap ( <esc>`>a)<esc>`<i(<esc>
 vnoremap [ <esc>`>a]<esc>`<i[<esc>
 vnoremap { <esc>`>a}<esc>`<i{<esc>
 vnoremap ' <esc>`>a'<esc>`<i'<esc>
-
