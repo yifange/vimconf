@@ -9,7 +9,7 @@ let g:solarized_visibility="high"    "default value is normal
 colorscheme solarized
 " colorscheme koehler
 " highlight Cursor guifg=white guibg=OrangeRed
-
+hi WildMenu ctermfg=3* guifg=Yellow
 vnoremap ( <esc>`>a)<esc>`<i(<esc>
 vnoremap [ <esc>`>a]<esc>`<i[<esc>
 vnoremap { <esc>`>a}<esc>`<i{<esc>

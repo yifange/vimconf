@@ -41,12 +41,9 @@ let g:bufExplorerSortBy='mru'
 map <leader>b :BufExplorerHorizontalSplit<cr>
 let g:bufExplorerSplitBelow = 1
 
-" vim-multiple-cursors
-let g:multi_cursor_next_key='<c-s>'
-
 " vim-latex
-nmap <c-\> <plug>IMAP_JumpForward
-imap <c-\> <plug>IMAP_JumpForward
+nmap <c-\><c-n> <plug>IMAP_JumpForward
+imap <c-\><c-n> <plug>IMAP_JumpForward
 
 " startify
 let g:startify_session_dir = '~/.vim/temp_dirs/session'
@@ -215,3 +212,7 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
+
+" easytags
+let g:easytags_file = "~/.vim/temp_dirs/tags"
+let g:easytags_events = ['BufWritePost']
