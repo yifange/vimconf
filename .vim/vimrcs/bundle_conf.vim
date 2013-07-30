@@ -28,6 +28,7 @@ let MRU_Max_Entries = 400
 map <leader>f :MRU<CR>
 
 " YankRing
+let g:yankring_enabled = 0
 let g:yankring_history_dir = '~/.vim/temp_dirs'
 " let g:yankring_replace_n_pkey = '<c-p>'
 " let g:yankring_replace_n_nkey = '<c-n>'
