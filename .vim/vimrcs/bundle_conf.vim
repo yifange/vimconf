@@ -217,3 +217,13 @@ let g:pymode_folding = 0
 " easytags
 let g:easytags_file = "~/.vim/temp_dirs/tags"
 let g:easytags_events = ['BufWritePost']
+
+" taboo.vim
+map <F2> :TabooRename 
+map <F3> :TabooReset<cr>
+let g:taboo_tab_format="[%N|%f%m]"
+let g:taboo_renamed_tab_format="[%N|%f%m]"
+
+" session
+let g:session_autoload="no" 
+let g:session_autosave="no"

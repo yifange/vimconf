@@ -8,7 +8,7 @@ call vundle#rc()
 
 
 " Load bundles
-source ~/.vim/bundles
+source ~/.vim/bundles.vim
 
 " Load configs
 

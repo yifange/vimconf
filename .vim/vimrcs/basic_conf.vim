@@ -15,7 +15,7 @@ let g:mapleader = " "
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
 " command W w !sudo tee % > /dev/null
-
+map <leader>w :w<cr>
 
 set scrolloff=7
 
@@ -42,6 +42,7 @@ set nobackup
 set nowb
 set noswapfile
 
+set sessionoptions+=globals
 " Searching
 set ignorecase
 set smartcase
@@ -255,8 +256,17 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
-
-
+nmap <leader>h gT
+nmap <leader>l gt
+nmap <leader>1 1gt
+nmap <leader>2 2gt
+nmap <leader>3 3gt
+nmap <leader>4 4gt
+nmap <leader>5 5gt
+nmap <leader>6 6gt
+nmap <leader>7 7gt
+nmap <leader>8 8gt
+nmap <leader>9 9gt
 " auto save session while exiting
 " function! SaveSess()
 "     execute 'mksession! ~/.vim/temp_dirs/session/RESTORE_LAST'
