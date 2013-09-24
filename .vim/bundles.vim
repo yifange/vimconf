@@ -18,7 +18,9 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'altercation/vim-colors-solarized'
 
 " Bundle 'Lokaltog/vim-powerline'
-Bundle 'Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
+" Bundle 'Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
+Bundle 'bling/vim-airline'
+Bundle 'bling/vim-bufferline'
 " Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'majutsushi/tagbar'
 Bundle 'godlygeek/tabular'
@@ -67,5 +69,6 @@ Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-session'
 
-Bundle 'gcmt/taboo.vim'
+Bundle 'vim-scripts/LustyExplorer'
+" Bundle 'gcmt/taboo.vim'
 " Bundle "vim-scripts/Tab-Name"

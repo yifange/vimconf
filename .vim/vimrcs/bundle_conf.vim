@@ -219,11 +219,33 @@ let g:easytags_file = "~/.vim/temp_dirs/tags"
 let g:easytags_events = ['BufWritePost']
 
 " taboo.vim
-map <F2> :TabooRename 
-map <F3> :TabooReset<cr>
-let g:taboo_tab_format="[%N|%f%m]"
-let g:taboo_renamed_tab_format="[%N|%f%m]"
+" map <F2> :TabooRename 
+" map <F3> :TabooReset<cr>
+" let g:taboo_tab_format="[%N|%f%m]"
+" let g:taboo_renamed_tab_format="[%N|%f%m]"
 
 " session
 let g:session_autoload="no" 
 let g:session_autosave="no"
+
+
+" vim-airline
+let g:airline_powerline_fonts=1
+
+let g:airline_mode_map = {
+    \ '__' : '-',
+    \ 'n'  : 'N',
+    \ 'i'  : 'I',
+    \ 'R'  : 'R',
+    \ 'c'  : 'C',
+    \ 'v'  : 'V',
+    \ 'V'  : 'V',
+    \ '' : 'V',
+    \ 's'  : 'S',
+    \ 'S'  : 'S',
+    \ '' : 'S',
+    \ }
+let g:airline#extensions#bufferline#enabled = 1
+let g:airline_section_z = '%p%% %l'
+" vim-bufferline
+let g:bufferline_echo=0
