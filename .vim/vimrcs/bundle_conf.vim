@@ -249,3 +249,7 @@ let g:airline#extensions#bufferline#enabled = 1
 let g:airline_section_z = '%p%% %l'
 " vim-bufferline
 let g:bufferline_echo=0
+
+
+" solarized
+let g:solarized_termtrans=1

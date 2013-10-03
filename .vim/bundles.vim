@@ -72,3 +72,9 @@ Bundle 'xolox/vim-session'
 Bundle 'vim-scripts/LustyExplorer'
 " Bundle 'gcmt/taboo.vim'
 " Bundle "vim-scripts/Tab-Name"
+"
+" vim-unimpaired
+Bundle 'tpope/vim-unimpaired'
+Bundle 'vim-scripts/sudo.vim'
+
+Bundle 'dhruvasagar/vim-table-mode'

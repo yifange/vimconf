@@ -267,9 +267,10 @@ nmap <leader>6 6gt
 nmap <leader>7 7gt
 nmap <leader>8 8gt
 nmap <leader>9 9gt
-" auto save session while exiting
-" function! SaveSess()
-"     execute 'mksession! ~/.vim/temp_dirs/session/RESTORE_LAST'
-" endfunction
-" 
-" autocmd VimLeave * call SaveSess()
+
+" Disable Background Color Erase (BCE) so that color schemes
+" work properly when Vim is used inside tmux and GNU screen.
+" See also http://snk.tuxfamily.org/log/vim-256color-bce.html
+if &term =~ '256color'
+  set t_ut=
+endif
