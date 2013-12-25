@@ -35,8 +35,8 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-fugitive'
 
 " autocomplete
-Bundle 'Shougo/neocomplcache'
-" Bundle 'Shougo/neocomplete.vim'
+" Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neocomplete.vim'
 Bundle 'Shougo/neosnippet'
 Bundle 'honza/vim-snippets'
 
@@ -78,3 +78,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/sudo.vim'
 
 Bundle 'dhruvasagar/vim-table-mode'
+
+Bundle 'othree/javascript-libraries-syntax.vim'
+
+Bundle 'depuracao/vim-rdoc'
