@@ -4,4 +4,4 @@ cp .vimrc ~
 cp .vim/bundles.vim ~/.vim/
 cp .vim/tweaks.vim ~/.vim/
 cp -r .vim/vimrcs/ ~/.vim/
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim

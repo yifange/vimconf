@@ -1,9 +1,9 @@
 " Vundle setup
-set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+if has('vim_starting')
+  set nocompatible
+  set rtp+=~/.vim/bundle/neobundle.vim/
+endif
+call neobundle#rc(expand('~/.vim/bundle'))
 
 
 
@@ -20,3 +20,5 @@ try
     source ~/.vim/tweaks.vim
 catch
 endtry
+filetype plugin indent on
+NeoBundleCheck

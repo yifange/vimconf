@@ -1,80 +1,89 @@
-Bundle 'gmarik/vundle'
-
+NeoBundleFetch 'Shougo/neobundle.vim'
 " useful libraries
-Bundle 'tomtom/tlib_vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'tomtom/tlib_vim'
+NeoBundle 'MarcWeber/vim-addon-mw-utils'
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/mru.vim'
-Bundle 'corntrace/bufexplorer'
-Bundle 'vim-scripts/YankRing.vim'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'vim-scripts/undotree.vim'
+" NeoBundle 'scrooloose/nerdtree'
+" NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'Shougo/vimproc', {
+ \ 'build' : {
+ \     'windows' : 'make -f make_mingw32.mak',
+ \     'cygwin' : 'make -f make_cygwin.mak',
+ \     'mac' : 'make -f make_mac.mak',
+ \     'unix' : 'make -f make_unix.mak',
+ \    },
+ \ }
+NeoBundle 'Shougo/vimfiler.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimshell.vim'
+
+NeoBundle 'vim-scripts/mru.vim'
+NeoBundle 'corntrace/bufexplorer'
+NeoBundle 'vim-scripts/YankRing.vim'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'vim-scripts/undotree.vim'
 " Bundle 'vim-scripts/a.vim'
 
-Bundle 'tpope/vim-surround'
-Bundle 'Raimondi/delimitMate'
-Bundle 'altercation/vim-colors-solarized'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'altercation/vim-colors-solarized'
 
 " Bundle 'Lokaltog/vim-powerline'
 " Bundle 'Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
-Bundle 'bling/vim-airline'
-Bundle 'bling/vim-bufferline'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'bling/vim-bufferline'
 " Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'majutsushi/tagbar'
-Bundle 'godlygeek/tabular'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'godlygeek/tabular'
 
 " latex
-Bundle 'jcf/vim-latex'
+NeoBundle 'jcf/vim-latex'
 
 " markdown
-Bundle 'tpope/vim-markdown'
+NeoBundle 'tpope/vim-markdown'
 
 " git
-Bundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-fugitive'
 
 " autocomplete
-Bundle 'Shougo/neocomplcache'
-" Bundle 'Shougo/neocomplete.vim'
-Bundle 'Shougo/neosnippet'
-Bundle 'honza/vim-snippets'
+NeoBundle 'Shougo/neocomplete'
+" Bundle 'S.vim'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'honza/vim-snippets'
 
 " python
-Bundle 'klen/python-mode'
+NeoBundle 'klen/python-mode'
 
 " Ruby on rails
-Bundle 'tpope/vim-rails'
-Bundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'vim-ruby/vim-ruby'
 " less
-Bundle 'groenewege/vim-less'
+NeoBundle 'groenewege/vim-less'
 
 " Ack
-Bundle 'mileszs/ack.vim'
+" NeoBundle 'mileszs/ack.vim'
 
 " Coffeescript
-Bundle 'kchmck/vim-coffee-script'
+NeoBundle 'kchmck/vim-coffee-script'
 
 " Rake
-Bundle 'tpope/vim-rake'
+NeoBundle 'tpope/vim-rake'
 
 " indent guide
-Bundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 " easymotion
-Bundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Lokaltog/vim-easymotion'
 
-Bundle 'xolox/vim-misc'
+NeoBundle 'xolox/vim-misc'
 " Bundle 'xolox/vim-notes'
-Bundle 'xolox/vim-easytags'
-Bundle 'xolox/vim-session'
+NeoBundle 'xolox/vim-easytags'
+NeoBundle 'xolox/vim-session'
 
-Bundle 'vim-scripts/LustyExplorer'
 " Bundle 'gcmt/taboo.vim'
-" Bundle "vim-scripts/Tab-Name"
+" Bundle 'vim-scripts/Tab-Name'
 "
 " vim-unimpaired
-Bundle 'tpope/vim-unimpaired'
-Bundle 'vim-scripts/sudo.vim'
+NeoBundle 'tpope/vim-unimpaired'
 
-Bundle 'dhruvasagar/vim-table-mode'
+NeoBundle 'dhruvasagar/vim-table-mode'

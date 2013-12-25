@@ -6,7 +6,7 @@ filetype plugin on
 filetype indent on
 syntax enable
 
-set pastetoggle=<F11>
+set pastetoggle=<F10>
 
 nnoremap <SPACE> <Nop>
 let mapleader = " "
