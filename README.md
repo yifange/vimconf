@@ -1,6 +1,7 @@
-Vimconf cheatsheet
-==================
-Navigation
-----------
+# Vundle based Vim configuration framework
+
+## Vimconf cheatsheet
+
+### Navigation
 TBA
 
